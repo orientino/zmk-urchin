@@ -12,7 +12,7 @@
 #define BASE 0
 #define SY1 1
 #define SY2 2
-#define FNC 3
+#define FUN 3
 #define RST 4
 
 / {
@@ -46,35 +46,39 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
+			label = "base";
 			bindings = <
 			&kp Q &kp W &kp E &kp R &kp T           		&kp Y &kp U &kp I &kp O &kp P 
 			&kp A &kp S &kp D &kp F &kp G           		&kp H &kp J &kp K &kp L &kp BSPC
-			&kp Z &kp X &kp C &kp V &kp B           		&kp N &kp M &kp COMMA &kp DOT &kp FSLH
-							&mo SY2 &kp SPACE       		&kp RET &mo SY1
+			&kp Z &kp X &kp C &kp V &kp B           		&kp N &kp M &kp COMMA &kp DOT &kp RET
+							&mo SY2 &sk LCMD	       		&kp SPACE &mo SY1
 			>;
 		};
 
 		sy1_layer {
+			label = "num.";
 			bindings = <
 			&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		     	&kp N6 &kp N7 &kp N8 &kp N9 &kp N0
 			&kp TILDE &kp LT &kp LPAR &kp LBKT &kp LBRC  	&kp SQT &kp EQUAL &kp UNDER &kp MINUS &kp STAR
-			&kp GRAVE &kp GT &kp RPAR &kp RBKT &kp RBRC  	&kp DQT &kp EXCL &kp QMARK &kp PLUS &kp BSLH
+			&kp GRAVE &kp GT &kp RPAR &kp RBKT &kp RBRC  	&kp DQT &kp EXCL &kp QMARK &kp PLUS &kp FSLH
 											&none &none  	&none &none  
 			>;
 		};
 
 		sy2_layer {
+			label = "sym.";
 			bindings = <
-			&none &none &none &none &none 					&kp AT &kp HASH &kp DLLR &kp PRCNT &kp HOME
-			&kp CAPS &none &none &none &none 				&kp CARET &kp COLON &kp SEMI &kp UP &kp END
-			&kp ESC &none &none &none &none 				&kp AMPS &kp PIPE &kp LEFT &kp DOWN &kp RIGHT
-							&none &mo FNC    				&none &none
+			&kp ESC &none &none &none &none 				&kp AT &kp HASH &kp DLLR &kp PRCNT &kp HOME
+			&kp CAPS &kp BSLH &none &none &none				&kp CARET &kp COLON &kp SEMI &kp UP &kp END
+			&none &none &none &none &none 					&kp AMPS &kp PIPE &kp LEFT &kp DOWN &kp RIGHT
+							&none &mo FUN    				&none &none
 			>;
 		};
 
-		fnc_layer {
+		fun_layer {
+			label = "fun.";
 			bindings = <
-			&kp F1 &kp F2 &kp F3 &kp F4 &kp PSCRN				&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR &none
+			&kp F1 &kp F2 &kp F3 &kp F4 &kp PSCRN			&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR &none
 			&kp F5 &kp F6 &kp F7 &kp F8 &none				&none &none &none &none &none
 			&kp F9 &kp F10 &kp F11 &kp F12 &none			&none &none &none &none &none
 										&none &mo RST		&none &none  
@@ -82,6 +86,7 @@
 		};
 
 		rst_layer {
+			label = "rst.";
 			bindings = <
 			&none &none &none &none &none					&none &none &none &none &none
 			&none &none &none &none &none					&none &none &none &none &none
