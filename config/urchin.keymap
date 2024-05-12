@@ -15,6 +15,7 @@
 #define FUN 3
 #define RST 4
 
+
 / {
     combos {
         #include "combos.dtsi"    
@@ -31,6 +32,7 @@
         };
     };
 };
+
 
 /*           34 Keys
 ╭──────────────╮ ╭──────────────╮

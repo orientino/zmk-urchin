@@ -19,6 +19,6 @@ compatible = "zmk,combos";
          ╰─────╯ ╰─────╯         */
 
 COMBO(tab, &kp TAB, 0 1)
-COMBO(opt, &sk LALT, 20 21)
 COMBO(shift, &skq LSHFT, 27 28)
-COMBO(ctrl, &sk LCTL, 32 33)
+COMBO(ctrl, &sk LCTL, 30 31)
+COMBO(opt, &sk LALT, 32 33)
