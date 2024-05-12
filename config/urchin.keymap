@@ -57,8 +57,8 @@
 		sy1_layer {
 			bindings = <
 			&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		     	&kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-			&kp TILDE &kp LT &kp LPAR &kp LBRT &kp LBKC  	&kp SQT &kp EQUAL &kp UNDER &kp MINUS &kp STAR
-			&kp GRAVE &kp GT &kp RPAR &kp RBRT &kp RBKC  	&kp DQT &kp EXCL &kp QMARK &kp PLUS &kp BSLH
+			&kp TILDE &kp LT &kp LPAR &kp LBKT &kp LBRC  	&kp SQT &kp EQUAL &kp UNDER &kp MINUS &kp STAR
+			&kp GRAVE &kp GT &kp RPAR &kp RBKT &kp RBRC  	&kp DQT &kp EXCL &kp QMARK &kp PLUS &kp BSLH
 											&none &none  	&none &none  
 			>;
 		};
@@ -67,14 +67,14 @@
 			bindings = <
 			&none &none &none &none &none 					&kp AT &kp HASH &kp DLLR &kp PRCNT &kp HOME
 			&kp CAPS &none &none &none &none 				&kp CARET &kp COLON &kp SEMI &kp UP &kp END
-			&kp ESC &none &none &none &none 				&kp AMPS &kp PIPE &kp LEFT &kp DOWN &RIGHT
+			&kp ESC &none &none &none &none 				&kp AMPS &kp PIPE &kp LEFT &kp DOWN &kp RIGHT
 							&none &mo FNC    				&none &none
 			>;
 		};
 
 		fnc_layer {
 			bindings = <
-			&kp F1 &kp F2 &kp F3 &kp F4 &PRINTSCREEN		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR &none
+			&kp F1 &kp F2 &kp F3 &kp F4 &kp PSCRN				&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR &none
 			&kp F5 &kp F6 &kp F7 &kp F8 &none				&none &none &none &none &none
 			&kp F9 &kp F10 &kp F11 &kp F12 &none			&none &none &none &none &none
 										&none &mo RST		&none &none  
@@ -88,6 +88,6 @@
 			&none &none &none &none &none                  	&none &none &none &none &bootloader
 							&none &none						&none &none  
 			>;
-		}
+		};
 	};
 };
