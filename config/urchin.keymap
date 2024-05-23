@@ -17,19 +17,12 @@
 
 
 / {
-    combos {
-        #include "combos.dtsi"    
+	macros {
+		#include "macros.dtsi"
     };
 
-	behaviors {
-        skq: sticky_key_quick_release {
-            compatible = "zmk,behavior-sticky-key";
-            label = "STICKY_KEY_QUICK_RELEASE";
-            #binding-cells = <1>;
-            bindings = <&kp>;
-            release-after-ms = <1000>;
-            quick-release;
-        };
+    combos {
+        #include "combos.dtsi"    
     };
 };
 
@@ -47,13 +40,13 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-		default_layer {
+		base_layer {
 			label = "base";
 			bindings = <
 			&kp Q &kp W &kp E &kp R &kp T           		&kp Y &kp U &kp I &kp O &kp P 
 			&kp A &kp S &kp D &kp F &kp G           		&kp H &kp J &kp K &kp L &kp BSPC
 			&kp Z &kp X &kp C &kp V &kp B           		&kp N &kp M &kp COMMA &kp DOT &kp RET
-							&mo SY2 &sk LCMD	       		&kp SPACE &mo SY1
+						&mo SY2 &sk LCMD	       			&kp SPACE &mo SY1
 			>;
 		};
 
@@ -61,36 +54,36 @@
 			label = "num.";
 			bindings = <
 			&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		     	&kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-			&kp TILDE &kp LT &kp LPAR &kp LBKT &kp LBRC  	&kp SQT &kp EQUAL &kp UNDER &kp MINUS &kp STAR
-			&kp GRAVE &kp GT &kp RPAR &kp RBKT &kp RBRC  	&kp DQT &kp EXCL &kp QMARK &kp PLUS &kp FSLH
-											&none &none  	&none &none  
+			&kp TILDE &kp LPAR &kp LBKT &kp LBRC &kp LT  	&kp DQT &kp EQUAL &kp FSLH &kp STAR &kp EXCL
+			&kp GRAVE &kp RPAR &kp RBKT &kp RBRC &kp GT  	&kp SQT &kp UNDER &kp MINUS &kp PLUS &kp QMARK
+									&ks LSHFT &ks LCTL  	&ks LALT &ks LSHFT  
 			>;
 		};
 
 		sy2_layer {
 			label = "sym.";
 			bindings = <
-			&kp ESC &none &none &none &none 				&kp AT &kp HASH &kp DLLR &kp PRCNT &kp HOME
-			&kp CAPS &kp BSLH &none &none &none				&kp CARET &kp COLON &kp SEMI &kp UP &kp END
-			&none &none &none &none &none 					&kp AMPS &kp PIPE &kp LEFT &kp DOWN &kp RIGHT
-							&none &mo FUN    				&none &none
+			&kp ESC &kp AT &kp HASH &kp DLLR &kp PRCNT 		&kp CARET &kp AMPS &kp PIPE &kp BSLH &kp HOME
+			&kp CAPS &kp TAB &none &none &none				&none &kp COLON &kp SEMI &kp UP &kp END
+			&mo FUN &none &none &none &none 				&none &none &kp LEFT &kp DOWN &kp RIGHT
+							&none &none	    				&none &none
 			>;
 		};
 
 		fun_layer {
 			label = "fun.";
 			bindings = <
-			&kp F1 &kp F2 &kp F3 &kp F4 &kp PSCRN			&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR &none
-			&kp F5 &kp F6 &kp F7 &kp F8 &none				&none &none &none &none &none
-			&kp F9 &kp F10 &kp F11 &kp F12 &none			&none &none &none &none &none
-										&none &mo RST		&none &none  
+			&kp F1 &kp F2 &kp F10 &kp F11 &kp F12					&none &none &none &none &none				
+			&kp LC(1) &kp LC(2) &kp LC(3) &kp LC(4) &kp LC(5)		&kp LC(H) &kp LC(J) &kp LC(K) &kp LC(L) &none
+			&LCS(1) &LCS(2) &LCS(3) &LCS(4) &LCS(5)					&LCS(H) &LCS(J) &LCS(K) &LCS(L) &none
+									&none &mo RST					&none &none  
 			>;
 		};
 
-		rst_layer {
-			label = "rst.";
+		res_layer {
+			label = "reset";
 			bindings = <
-			&none &none &none &none &none					&none &none &none &none &none
+			&none &none &none &none &none					&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR &none
 			&none &none &none &none &none					&none &none &none &none &none
 			&none &none &none &none &none                  	&none &none &none &none &bootloader
 							&none &none						&none &none  
