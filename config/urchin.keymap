@@ -56,7 +56,7 @@
 			&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		     	&kp N6 &kp N7 &kp N8 &kp N9 &kp N0
 			&kp TILDE &kp LPAR &kp LBKT &kp LBRC &kp LT  	&kp DQT &kp EQUAL &kp FSLH &kp STAR &kp EXCL
 			&kp GRAVE &kp RPAR &kp RBKT &kp RBRC &kp GT  	&kp SQT &kp UNDER &kp MINUS &kp PLUS &kp QMARK
-									&ks LSHFT &ks LCTL  	&ks LALT &ks LSHFT  
+									&sk LSHFT &sk LCTL  	&sk LALT &sk LSHFT  
 			>;
 		};
 
@@ -75,7 +75,7 @@
 			bindings = <
 			&kp F1 &kp F2 &kp F10 &kp F11 &kp F12					&none &none &none &none &none				
 			&kp LC(1) &kp LC(2) &kp LC(3) &kp LC(4) &kp LC(5)		&kp LC(H) &kp LC(J) &kp LC(K) &kp LC(L) &none
-			&LCS(1) &LCS(2) &LCS(3) &LCS(4) &LCS(5)					&LCS(H) &LCS(J) &LCS(K) &LCS(L) &none
+			&LCS_1 &LCS_2 &LCS_3 &LCS_4 &LCS_5						&LCS_H &LCS_J &LCS_K &LCS_L &none
 									&none &mo RST					&none &none  
 			>;
 		};

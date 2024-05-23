@@ -1,12 +1,10 @@
-compatible = "zmk,behavior-macro"; 
+ZMK_MACRO(LCS_H, bindings = <&kp LCTL &kp LSHFT &kp H>;)
+ZMK_MACRO(LCS_J, bindings = <&kp LCTL &kp LSHFT &kp J>;)
+ZMK_MACRO(LCS_K, bindings = <&kp LCTL &kp LSHFT &kp K>;)
+ZMK_MACRO(LCS_L, bindings = <&kp LCTL &kp LSHFT &kp L>;)
 
-ZMK_MACRO(LCS(H), bindings = <&kp LCTL &kp LSHFT &kp H>;)
-ZMK_MACRO(LCS(J), bindings = <&kp LCTL &kp LSHFT &kp J>;)
-ZMK_MACRO(LCS(K), bindings = <&kp LCTL &kp LSHFT &kp K>;)
-ZMK_MACRO(LCS(L), bindings = <&kp LCTL &kp LSHFT &kp L>;)
-
-ZMK_MACRO(LCS(1), bindings = <&kp LCTL &kp LSHFT &kp 1>;)
-ZMK_MACRO(LCS(2), bindings = <&kp LCTL &kp LSHFT &kp 2>;)
-ZMK_MACRO(LCS(3), bindings = <&kp LCTL &kp LSHFT &kp 3>;)
-ZMK_MACRO(LCS(4), bindings = <&kp LCTL &kp LSHFT &kp 4>;)
-ZMK_MACRO(LCS(5), bindings = <&kp LCTL &kp LSHFT &kp 5>;)
+ZMK_MACRO(LCS_1, bindings = <&kp LCTL &kp LSHFT &kp 1>;)
+ZMK_MACRO(LCS_2, bindings = <&kp LCTL &kp LSHFT &kp 2>;)
+ZMK_MACRO(LCS_3, bindings = <&kp LCTL &kp LSHFT &kp 3>;)
+ZMK_MACRO(LCS_4, bindings = <&kp LCTL &kp LSHFT &kp 4>;)
+ZMK_MACRO(LCS_5, bindings = <&kp LCTL &kp LSHFT &kp 5>;)
