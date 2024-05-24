@@ -50,26 +50,26 @@
 			label = "num.";
 			bindings = <
 			&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		     	&kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-			&kp TILDE &kp LPAR &kp LBKT &kp LBRC &kp LT  	&kp DQT &kp EQUAL &kp FSLH &kp STAR &kp EXCL
-			&kp GRAVE &kp RPAR &kp RBKT &kp RBRC &kp GT  	&kp SQT &kp UNDER &kp MINUS &kp PLUS &kp QMARK
+			&kp TILDE &kp LPAR &kp LBKT &kp LBRC &kp LT  	&none &kp EQUAL &kp FSLH &kp STAR &kp EXCL
+			&kp GRAVE &kp RPAR &kp RBKT &kp RBRC &kp GT  	&none &kp UNDER &kp MINUS &kp PLUS &kp QMARK
 									&sk LSHFT &sk LCTL  	&sk LALT &sk LSHFT  
 			>;
 		};
 
-		sy2_layer {
+		Sy2_layer {
 			label = "sym.";
 			bindings = <
 			&kp ESC &kp AT &kp HASH &kp DLLR &kp PRCNT 		&kp CARET &kp AMPS &kp PIPE &kp BSLH &kp HOME
-			&kp CAPS &kp TAB &none &none &none				&none &kp COLON &kp SEMI &kp UP &kp END
-			&mo FUN &none &none &none &none 				&none &none &kp LEFT &kp DOWN &kp RIGHT
-									&sk LSHFT &sk LCTL  	&sk LALT &sk LSHFT  
+			&kp CAPS &kp TAB &none &none &none				&kp DQT &kp COLON &kp SEMI &kp UP &kp END
+			&none &none &none &none &none 					&kp SQT &kp UNDER &kp LEFT &kp DOWN &kp RIGHT
+									&mo FUN &sk LALT  		&sk LCTL &mo FUN
 			>;
 		};
 
 		fun_layer {
 			label = "fun.";
 			bindings = <
-			&kp F1 &kp F2 &kp F10 &kp F11 &kp F12											&none &none &none &none &none				
+			&none &none &kp LC(LS(TAB)) &kp LC(TAB) &none									&kp F1 &kp F2 &kp F10 &kp F11 &kp F12
 			&kp LC(N1) &kp LC(N2) &kp LC(N3) &kp LC(N4) &kp LC(N5)							&kp LC(H) &kp LC(J) &kp LC(K) &kp LC(L) &none
 			&kp LC(LS(N1)) &kp LC(LS(N2)) &kp LC(LS(N3)) &kp LC(LS(N4)) &kp LC(LS(N5))		&kp LC(LS(H)) &kp LC(LS(J)) &kp LC(LS(K)) &kp LC(LS(L)) &none
 															&none &mo RST					&none &none  
