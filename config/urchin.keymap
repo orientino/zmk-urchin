@@ -17,10 +17,6 @@
 
 
 / {
-	macros {
-		#include "macros.dtsi"
-    };
-
     combos {
         #include "combos.dtsi"    
     };
@@ -66,17 +62,17 @@
 			&kp ESC &kp AT &kp HASH &kp DLLR &kp PRCNT 		&kp CARET &kp AMPS &kp PIPE &kp BSLH &kp HOME
 			&kp CAPS &kp TAB &none &none &none				&none &kp COLON &kp SEMI &kp UP &kp END
 			&mo FUN &none &none &none &none 				&none &none &kp LEFT &kp DOWN &kp RIGHT
-							&none &none	    				&none &none
+									&sk LSHFT &sk LCTL  	&sk LALT &sk LSHFT  
 			>;
 		};
 
 		fun_layer {
 			label = "fun.";
 			bindings = <
-			&kp F1 &kp F2 &kp F10 &kp F11 &kp F12					&none &none &none &none &none				
-			&kp LC(1) &kp LC(2) &kp LC(3) &kp LC(4) &kp LC(5)		&kp LC(H) &kp LC(J) &kp LC(K) &kp LC(L) &none
-			&LCS_1 &LCS_2 &LCS_3 &LCS_4 &LCS_5						&LCS_H &LCS_J &LCS_K &LCS_L &none
-									&none &mo RST					&none &none  
+			&kp F1 &kp F2 &kp F10 &kp F11 &kp F12											&none &none &none &none &none				
+			&kp LC(N1) &kp LC(N2) &kp LC(N3) &kp LC(N4) &kp LC(N5)							&kp LC(H) &kp LC(J) &kp LC(K) &kp LC(L) &none
+			&kp LC(LS(N1)) &kp LC(LS(N2)) &kp LC(LS(N3)) &kp LC(LS(N4)) &kp LC(LS(N5))		&kp LC(LS(H)) &kp LC(LS(J)) &kp LC(LS(K)) &kp LC(LS(L)) &none
+															&none &mo RST					&none &none  
 			>;
 		};
 
