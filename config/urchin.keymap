@@ -22,15 +22,13 @@
  * |  A  |  S  |  D  |  F  |  G  | |  H  |  J  |  K  |  L  | BSPC|
  * |  Z  |  X  |  C  |  V  |  B  | |  N  |  M  |  ,  |  .  |LSHFT|
  * ╰─────────────────╮ SY2 | CMD | | SPC | SY1 ╭─────────────────╯
- * 					 ╰───────────╯ ╰───────────╯
 
  * SY1 (Symbols 1)
  * ╭─────────────────────────────╮ ╭─────────────────────────────╮
  * |  1  |  2  |  3  |  4  |  5  | |  6  |  7  |  8  |  9  |  0  |
- * |  ~  |  (  |  [  |  {  |  <  | |  !  |  =  |  /  |  *  | RET |
- * |  `  |  )  |  ]  |  }  |  >  | |  ?  |  _  |  -  |  +  |     |
+ * |  (  |  )  |  {  |  }  |  ~  | |  !  |  =  |  /  |  *  | RET |
+ * |  <  |  >  |  [  |  ]  |  `  | |  ?  |  _  |  -  |  +  |     |
  * ╰─────────────────╮ LCTL| LALT| | LALT| LCTL╭─────────────────╯
- *			     	 ╰───────────╯ ╰───────────╯
 
  * SY2 (Symbols 2)
  * ╭─────────────────────────────╮ ╭─────────────────────────────╮
@@ -38,7 +36,6 @@
  * | CAPS| TAB |     |     |     | |  "  |  :  |  ;  |ARROW| END |
  * | DEL |     |     |     |     | |  '  |  _  |ARROW|ARROW|ARROW|
  * ╰─────────────────╮     |     | | FUN | FUN ╭─────────────────╯
- *				     ╰───────────╯ ╰───────────╯
 
  * FUN (Functions): custom shortcuts (yabai+skhd)
  * ╭─────────────────────────────╮ ╭─────────────────────────────╮
@@ -46,7 +43,6 @@
  * |     |     |     |     |     | |     |     |     |     |     |
  * |     |     |     |     |     | |     |     |     |     |     |
  * ╰─────────────────╮     |     | |     |     ╭─────────────────╯
- *				     ╰───────────╯ ╰───────────╯
  */
 
 
@@ -74,8 +70,8 @@
 			label = "num.";
 			bindings = <
 			&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		     	&kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-			&kp TILDE &kp LPAR &kp LBKT &kp LBRC &kp LT  	&kp EXCL &kp EQUAL &kp FSLH &kp STAR &kp RET
-			&kp GRAVE &kp RPAR &kp RBKT &kp RBRC &kp GT  	&kp QMARK &kp UNDER &kp MINUS &kp PLUS &none
+			&kp LPAR &kp RPAR &kp LBRC &kp RBRC &kp TILDE  	&kp EXCL &kp EQUAL &kp FSLH &kp STAR &kp RET
+			&kp LT &kp GT &kp LBKT &kp RBKT &kp GRAVE  		&kp QMARK &kp UNDER &kp MINUS &kp PLUS &none
 									&sk LCTL &sk LALT  		&sk LALT &sk LCTL
 			>;
 		};
