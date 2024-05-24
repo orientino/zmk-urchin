@@ -15,6 +15,40 @@
 #define FUN 3
 #define RST 4
 
+/* 
+ * BASE
+ * ╭─────────────────────────────╮ ╭─────────────────────────────╮
+ * |  Q  |  W  |  E  |  R  |  T  | |  Y  |  U  |  I  |  O  |  P  |
+ * |  A  |  S  |  D  |  F  |  G  | |  H  |  J  |  K  |  L  | BSPC|
+ * |  Z  |  X  |  C  |  V  |  B  | |  N  |  M  |  ,  |  .  |LSHFT|
+ * ╰─────────────────╮ SY2 | CMD | | SPC | SY1 ╭─────────────────╯
+ * 					 ╰───────────╯ ╰───────────╯
+
+ * SY1 (Symbols 1)
+ * ╭─────────────────────────────╮ ╭─────────────────────────────╮
+ * |  1  |  2  |  3  |  4  |  5  | |  6  |  7  |  8  |  9  |  0  |
+ * |  ~  |  (  |  [  |  {  |  <  | |  !  |  =  |  /  |  *  | RET |
+ * |  `  |  )  |  ]  |  }  |  >  | |  ?  |  _  |  -  |  +  |     |
+ * ╰─────────────────╮ LCTL| LALT| | LALT| LCTL╭─────────────────╯
+ *			     	 ╰───────────╯ ╰───────────╯
+
+ * SY2 (Symbols 2)
+ * ╭─────────────────────────────╮ ╭─────────────────────────────╮
+ * | ESC |  @  |  #  |  $  |  %  | |  ^  |  &  |  |  |  \  | HOME|
+ * | CAPS| TAB |     |     |     | |  "  |  :  |  ;  |ARROW| END |
+ * | DEL |     |     |     |     | |  '  |  _  |ARROW|ARROW|ARROW|
+ * ╰─────────────────╮     |     | | FUN | FUN ╭─────────────────╯
+ *				     ╰───────────╯ ╰───────────╯
+
+ * FUN (Functions): custom shortcuts (yabai+skhd)
+ * ╭─────────────────────────────╮ ╭─────────────────────────────╮
+ * |     |     |     |     |     | |     |     |     |     |     |
+ * |     |     |     |     |     | |     |     |     |     |     |
+ * |     |     |     |     |     | |     |     |     |     |     |
+ * ╰─────────────────╮     |     | |     |     ╭─────────────────╯
+ *				     ╰───────────╯ ╰───────────╯
+ */
+
 
 / {
     combos {
@@ -22,26 +56,16 @@
     };
 };
 
-
-/*           34 Keys
-╭──────────────╮ ╭──────────────╮
-│ 0  1  2  3  4│ │ 5  6  7  8  9│
-│10 11 12 13 14│ │15 16 17 18 19│
-│20 21 22 23 24│ │25 26 27 28 29│
-╰────────╮30 31│ │32 33╭────────╯
-         ╰─────╯ ╰─────╯         */
-
-
 / {
 	keymap {
 		compatible = "zmk,keymap";
-
+		
 		base_layer {
 			label = "base";
 			bindings = <
 			&kp Q &kp W &kp E &kp R &kp T           		&kp Y &kp U &kp I &kp O &kp P 
 			&kp A &kp S &kp D &kp F &kp G           		&kp H &kp J &kp K &kp L &kp BSPC
-			&kp Z &kp X &kp C &kp V &kp B           		&kp N &kp M &kp COMMA &kp DOT &kp RET
+			&kp Z &kp X &kp C &kp V &kp B           		&kp N &kp M &kp COMMA &kp DOT &kp LSHFT
 						&mo SY2 &sk LCMD	       			&kp SPACE &mo SY1
 			>;
 		};
@@ -50,19 +74,19 @@
 			label = "num.";
 			bindings = <
 			&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		     	&kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-			&kp TILDE &kp LPAR &kp LBKT &kp LBRC &kp LT  	&none &kp EQUAL &kp FSLH &kp STAR &kp EXCL
-			&kp GRAVE &kp RPAR &kp RBKT &kp RBRC &kp GT  	&none &kp UNDER &kp MINUS &kp PLUS &kp QMARK
-									&sk LSHFT &sk LCTL  	&sk LALT &sk LSHFT  
+			&kp TILDE &kp LPAR &kp LBKT &kp LBRC &kp LT  	&kp EXCL &kp EQUAL &kp FSLH &kp STAR &kp RET
+			&kp GRAVE &kp RPAR &kp RBKT &kp RBRC &kp GT  	&kp QMARK &kp UNDER &kp MINUS &kp PLUS &none
+									&sk LCTL &sk LALT  		&sk LALT &sk LCTL
 			>;
 		};
 
-		Sy2_layer {
+		sy2_layer {
 			label = "sym.";
 			bindings = <
 			&kp ESC &kp AT &kp HASH &kp DLLR &kp PRCNT 		&kp CARET &kp AMPS &kp PIPE &kp BSLH &kp HOME
 			&kp CAPS &kp TAB &none &none &none				&kp DQT &kp COLON &kp SEMI &kp UP &kp END
 			&kp DEL &none &none &none &none 				&kp SQT &kp UNDER &kp LEFT &kp DOWN &kp RIGHT
-									&mo FUN &sk LALT  		&sk LCTL &mo FUN
+									&none &none 			&mo FUN &mo FUN
 			>;
 		};
 
