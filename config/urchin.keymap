@@ -61,7 +61,7 @@
 			bindings = <
 			&kp ESC &kp AT &kp HASH &kp DLLR &kp PRCNT 		&kp CARET &kp AMPS &kp PIPE &kp BSLH &kp HOME
 			&kp CAPS &kp TAB &none &none &none				&kp DQT &kp COLON &kp SEMI &kp UP &kp END
-			&none &none &none &none &none 					&kp SQT &kp UNDER &kp LEFT &kp DOWN &kp RIGHT
+			&kp DEL &none &none &none &none 				&kp SQT &kp UNDER &kp LEFT &kp DOWN &kp RIGHT
 									&mo FUN &sk LALT  		&sk LCTL &mo FUN
 			>;
 		};
