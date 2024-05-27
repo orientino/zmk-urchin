@@ -19,23 +19,23 @@
  * BASE
  * ╭─────────────────────────────╮ ╭─────────────────────────────╮
  * |  Q  |  W  |  E  |  R  |  T  | |  Y  |  U  |  I  |  O  |  P  |
- * |  A  |  S  |  D  |  F  |  G  | |  H  |  J  |  K  |  L  | BSPC|
+ * |  A  |  S  |  D  |  F  |  G  | |  H  |  J  |  K  |  L  | RET |
  * |  Z  |  X  |  C  |  V  |  B  | |  N  |  M  |  ,  |  .  |LSHFT|
  * ╰─────────────────╮ SY2 | CMD | | SPC | SY1 ╭─────────────────╯
 
  * SY1 (Symbols 1)
  * ╭─────────────────────────────╮ ╭─────────────────────────────╮
  * |  1  |  2  |  3  |  4  |  5  | |  6  |  7  |  8  |  9  |  0  |
- * |  (  |  )  |  {  |  }  |  ~  | |  !  |  =  |  /  |  *  | RET |
+ * |  (  |  )  |  {  |  }  |  ~  | |  !  |  =  |  /  |  *  | BSPC|
  * |  <  |  >  |  [  |  ]  |  `  | |  ?  |  _  |  -  |  +  |     |
- * ╰─────────────────╮ LCTL| LALT| | LALT| LCTL╭─────────────────╯
+ * ╰─────────────────╮ LCTL| LALT| |     |     ╭─────────────────╯
 
  * SY2 (Symbols 2)
  * ╭─────────────────────────────╮ ╭─────────────────────────────╮
  * | ESC |  @  |  #  |  $  |  %  | |  ^  |  &  |  |  |  \  | HOME|
  * | CAPS| TAB |     |     |     | |  "  |  :  |  ;  |ARROW| END |
  * | DEL |     |     |     |     | |  '  |  _  |ARROW|ARROW|ARROW|
- * ╰─────────────────╮     |     | | FUN | FUN ╭─────────────────╯
+ * ╰─────────────────╮     |     | | LALT| LCTL╭─────────────────╯
 
  * FUN (Functions): custom shortcuts (yabai+skhd)
  * ╭─────────────────────────────╮ ╭─────────────────────────────╮
@@ -60,7 +60,7 @@
 			label = "base";
 			bindings = <
 			&kp Q &kp W &kp E &kp R &kp T           		&kp Y &kp U &kp I &kp O &kp P 
-			&kp A &kp S &kp D &kp F &kp G           		&kp H &kp J &kp K &kp L &kp BSPC
+			&kp A &kp S &kp D &kp F &kp G           		&kp H &kp J &kp K &kp L &kp RET
 			&kp Z &kp X &kp C &kp V &kp B           		&kp N &kp M &kp COMMA &kp DOT &kp LSHFT
 						&mo SY2 &sk LCMD	       			&kp SPACE &mo SY1
 			>;
@@ -70,9 +70,9 @@
 			label = "num.";
 			bindings = <
 			&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		     	&kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-			&kp LPAR &kp RPAR &kp LBRC &kp RBRC &kp TILDE  	&kp EXCL &kp EQUAL &kp FSLH &kp STAR &kp RET
+			&kp LPAR &kp RPAR &kp LBRC &kp RBRC &kp TILDE  	&kp EXCL &kp EQUAL &kp FSLH &kp STAR &kp BSPC
 			&kp LT &kp GT &kp LBKT &kp RBKT &kp GRAVE  		&kp QMARK &kp UNDER &kp MINUS &kp PLUS &none
-									&sk LCTL &sk LALT  		&sk LALT &sk LCTL
+									&sk LCTL &sk LALT  		&none &none
 			>;
 		};
 
@@ -82,7 +82,7 @@
 			&kp ESC &kp AT &kp HASH &kp DLLR &kp PRCNT 		&kp CARET &kp AMPS &kp PIPE &kp BSLH &kp HOME
 			&kp CAPS &kp TAB &none &none &none				&kp DQT &kp COLON &kp SEMI &kp UP &kp END
 			&kp DEL &none &none &none &none 				&kp SQT &kp UNDER &kp LEFT &kp DOWN &kp RIGHT
-									&none &none 			&mo FUN &mo FUN
+									&none &none 			&sk LALT &sk LCTL
 			>;
 		};
 
