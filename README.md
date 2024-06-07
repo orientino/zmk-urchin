@@ -28,15 +28,15 @@ If you also use these tools, you can give it a try. Otherwise, the layout is com
  * SY1 (Symbols 1)
  * ╭─────────────────────────────╮ ╭─────────────────────────────╮
  * |  1  |  2  |  3  |  4  |  5  | |  6  |  7  |  8  |  9  |  0  |
- * |  (  |  )  |  {  |  }  |  ~  | |  !  |  =  |  /  |  *  | BSPC|
- * |  <  |  >  |  [  |  ]  |  `  | |  ?  |  _  |  -  |  +  |     |
+ * |  (  |  )  |  {  |  }  |  ~  | |  !  |  _  |  -  |  /  | BSPC|
+ * |  <  |  >  |  [  |  ]  |  `  | |  ?  |  =  |  +  |  *  |     |
  * ╰─────────────────╮ LCTL| LALT| |     |     ╭─────────────────╯
 
  * SY2 (Symbols 2)
  * ╭─────────────────────────────╮ ╭─────────────────────────────╮
  * | ESC |  @  |  #  |  $  |  %  | |  ^  |  &  |  |  |  \  | HOME|
- * | CAPS| TAB |     |     |     | |  "  |  :  |  ;  |ARROW| END |
- * | DEL |     |     |     |     | |  '  |  _  |ARROW|ARROW|ARROW|
+ * | CAPS| TAB | DEL |     |     | |  "  |  :  |  ;  |ARROW| END |
+ * |LSHFT|     |     |     |     | |  '  |  _  |ARROW|ARROW|ARROW|
  * ╰─────────────────╮     |     | | LALT| LCTL╭─────────────────╯
 
  * FUN (Functions): custom shortcuts
