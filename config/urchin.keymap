@@ -33,8 +33,8 @@
  * SY2 (Symbols 2)
  * ╭─────────────────────────────╮ ╭─────────────────────────────╮
  * | ESC |  @  |  #  |  $  |  %  | |  ^  |  &  |  |  |  \  | HOME|
- * | CAPS| TAB |     |     |     | |  "  |  :  |  ;  |ARROW| END |
- * | DEL |LSHFT|     |     |     | |  '  |  _  |ARROW|ARROW|ARROW|
+ * | CAPS| TAB | DEL |     |     | |  "  |  :  |  ;  |ARROW| END |
+ * |LSHFT|     |     |     |     | |  '  |  _  |ARROW|ARROW|ARROW|
  * ╰─────────────────╮     |     | | LALT| LCTL╭─────────────────╯
 
  * FUN (Functions): custom shortcuts (yabai+skhd)
@@ -89,7 +89,7 @@
 		fun_layer {
 			label = "fun.";
 			bindings = <
-			&none &none &kp LC(LS(TAB)) &kp LC(TAB) &none									&kp F1 &kp F2 &kp F10 &kp F11 &kp F12
+			&none &none &kp LC(LS(TAB)) &kp LC(TAB) &kp LC(F)								&kp F1 &kp F2 &kp F10 &kp F11 &kp F12
 			&kp LC(N1) &kp LC(N2) &kp LC(N3) &kp LC(N4) &kp LC(N5)							&kp LC(H) &kp LC(J) &kp LC(K) &kp LC(L) &none
 			&kp LC(LS(N1)) &kp LC(LS(N2)) &kp LC(LS(N3)) &kp LC(LS(N4)) &kp LC(LS(N5))		&kp LC(LS(H)) &kp LC(LS(J)) &kp LC(LS(K)) &kp LC(LS(L)) &none
 															&none &mo RST					&none &none  
