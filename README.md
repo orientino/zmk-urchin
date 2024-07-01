@@ -14,7 +14,7 @@ This is an illustration to visualize the layout, which is created by considering
 - `vim` shortcuts require extensive usage of SHIFT
 - `yabai/skhd` shortcuts are in the custom FUN layer
 
-If you also use these tools, you can give it a try. Otherwise, the layout is complete while also being minimal with only 3 layers (+1 custom) and easily extendable.
+If you also use these tools, you can give it a try. The layout is complete while also being minimal with only 3 layers (+1 custom) and easily extendable.
 
 ```
 /* 
@@ -29,13 +29,13 @@ If you also use these tools, you can give it a try. Otherwise, the layout is com
  * ╭─────────────────────────────╮ ╭─────────────────────────────╮
  * |  1  |  2  |  3  |  4  |  5  | |  6  |  7  |  8  |  9  |  0  |
  * |  (  |  )  |  {  |  }  |  ~  | |  !  |  _  |  -  |  /  | BSPC|
- * |  <  |  >  |  [  |  ]  |  `  | |  ?  |  =  |  +  |  *  |     |
+ * |  <  |  >  |  [  |  ]  |  `  | |  ?  |  =  |  +  |  *  | DEL |
  * ╰─────────────────╮ LCTL| LALT| |     |     ╭─────────────────╯
 
  * SY2 (Symbols 2)
  * ╭─────────────────────────────╮ ╭─────────────────────────────╮
  * | ESC |  @  |  #  |  $  |  %  | |  ^  |  &  |  |  |  \  | HOME|
- * | CAPS| TAB | DEL |     |     | |  "  |  :  |  ;  |ARROW| END |
+ * | CAPS| TAB |     |     |     | |  "  |  :  |  ;  |ARROW| END |
  * |LSHFT|     |     |     |     | |  '  |  _  |ARROW|ARROW|ARROW|
  * ╰─────────────────╮     |     | | LALT| LCTL╭─────────────────╯
 
@@ -49,4 +49,4 @@ If you also use these tools, you can give it a try. Otherwise, the layout is com
 ```
 
 ## Credits
-Thanks to my friend Duccio ([duckyb](https://github.com/duckyb)) for designing and helping me to build this beautiful keyboard. Check the [Urchin's original repo](https://github.com/duckyb/urchin) to know more!
+Thanks to my friend Duccio ([duckyb](https://github.com/duckyb)) for designing and helping me to build this beautiful keyboard. Thanks also to the ZMK community on Discord for their great support. Check the [Urchin's original repo](https://github.com/duckyb/urchin) to know more!
