@@ -26,15 +26,15 @@
  * SY1 (Symbols 1)
  * ╭─────────────────────────────╮ ╭─────────────────────────────╮
  * |  1  |  2  |  3  |  4  |  5  | |  6  |  7  |  8  |  9  |  0  |
- * |  (  |  )  |  {  |  }  |  ~  | |  !  |  =  |  /  |  *  | BSPC|
- * |  <  |  >  |  [  |  ]  |  `  | |  ?  |  _  |  -  |  +  | DEL |
+ * |  (  |  )  |  {  |  }  |  "  | |  !  |  =  |  /  |  *  | BSPC|
+ * |  <  |  >  |  [  |  ]  |  '  | |  ?  |  _  |  -  |  +  | DEL |
  * ╰─────────────────╮ LCTL| LALT| |     |     ╭─────────────────╯
 
  * SY2 (Symbols 2)
  * ╭─────────────────────────────╮ ╭─────────────────────────────╮
  * | ESC |  @  |  #  |  $  |  %  | |  ^  |  &  |  |  |  \  | HOME|
- * | CAPS| TAB |     |     |     | |  "  |  :  |  ;  |ARROW| END |
- * |LSHFT|     |     |     |     | |  '  |  _  |ARROW|ARROW|ARROW|
+ * | CAPS| TAB |     |     |     | |  ~  |  :  |  ;  |ARROW| END |
+ * |LSHFT|     |     |     |     | |  `  |     |ARROW|ARROW|ARROW|
  * ╰─────────────────╮     |     | | LALT| LCTL╭─────────────────╯
 
  * FUN (Functions): custom shortcuts (yabai+skhd)
@@ -70,8 +70,8 @@
 			label = "num.";
 			bindings = <
 			&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		     	&kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-			&kp LPAR &kp RPAR &kp LBRC &kp RBRC &kp TILDE  	&kp EXCL &kp UNDER &kp MINUS &kp FSLH &kp BSPC
-			&kp LT &kp GT &kp LBKT &kp RBKT &kp GRAVE  		&kp QMARK &kp EQUAL &kp PLUS &kp STAR &kp DEL
+			&kp LPAR &kp RPAR &kp LBRC &kp RBRC &kp DQT  	&kp EXCL &kp UNDER &kp MINUS &kp FSLH &kp BSPC
+			&kp LT &kp GT &kp LBKT &kp RBKT &kp SQT  		&kp QMARK &kp EQUAL &kp PLUS &kp STAR &kp DEL
 									&sk LCTL &sk LALT  		&none &none
 			>;
 		};
@@ -80,8 +80,8 @@
 			label = "sym.";
 			bindings = <
 			&kp ESC &kp AT &kp HASH &kp DLLR &kp PRCNT 		&kp CARET &kp AMPS &kp PIPE &kp BSLH &kp HOME
-			&kp CAPS &kp TAB &none &none &none				&kp DQT &kp COLON &kp SEMI &kp UP &kp END
-			&kp LSHFT &none &none &none &none 				&kp SQT &kp UNDER &kp LEFT &kp DOWN &kp RIGHT
+			&kp CAPS &kp TAB &none &none &none				&kp TILDE &kp COLON &kp SEMI &kp UP &kp END
+			&kp LSHFT &none &none &none &none 				&kp GRAVE &kp UNDER &kp LEFT &kp DOWN &kp RIGHT
 									&none &none 			&sk LALT &sk LCTL
 			>;
 		};
